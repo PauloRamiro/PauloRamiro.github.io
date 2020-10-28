@@ -1,6 +1,6 @@
 body{
-    font-family: URW Chancery L, cursive;
-    font-size:17px;
+    font-family:  Arial ,Times, Times New Roman, serif;
+    font-size: x-large;
     color:#ffffff;
 
     margin: 0;
@@ -12,10 +12,11 @@ div{
     box-shadow: 10px 10px 20px #1a1a1a;
 }
 input{
-    margin-top: 5px;
+    margin-top: 10px;
     display: block;
     margin-left: 15%;
     font-family: URW Chancery L, cursive;
+    font-size: larger;
     width: 70%;
     border:1px solid #000000;
     border-radius: 3px;
@@ -31,7 +32,7 @@ dd{
     top:0;
     width: 100%;
     height: auto;
-    background-color: #000000ea;
+    background-color: #000000e7;
     box-shadow: 0px 0px 0px #1a1a1a;
 }
 
@@ -67,13 +68,13 @@ dd{
     margin:0;
     padding:0;
     list-style:none;
-    color:#e9e9e9;
+    color:#ffffff;
 }
 #menu li{
     float: left;
     padding-left:10px;
     padding-right: 10px;
-    transition: all ease-in 0.6s;
+    transition: all ease-in 0.4s;
 }
 #menu li:hover{
     background-color: #c74219;
@@ -113,24 +114,26 @@ dd{
 
 .input{
     margin-bottom: 15px;
-    margin-left: 30%;
-    width: 40%;
+    margin-left: 5%;
+    width: 90%;
     background-image: url("Img/Background (11).png");
     background-size: 100px;
     border:1px solid #000000;
     border-radius: 10px; 
 }
 .input_Calcular{
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 20%;
     width: 60%;
+    font-size: xx-large;
+    font-family: Times, Times New Roman, serif;
     background-image: url("Img/Background (6).png");
     background-size: 100px;
     border:1px solid #000000;
     border-radius: 3px;
     text-align: center;
-    font-size: 20px;
+    color: #ffffff;
     line-height: center;
     transition: all ease-in 0.4s;
 }
