@@ -1,0 +1,132 @@
+<html>
+
+    <head>
+        <meta charset = "UTF-8">
+        
+        <title> Física II</title>
+        <link rel = "stylesheet" type = "text/css" href = "Cod/style.css"/>
+    </head>
+
+    <body>
+
+        <div id = "Cabecalho">
+            <div id = "Nome_Trabalho">
+                Campo elétrico de uma barra
+            </div>
+            <div id = "modo">
+            </div>
+            <div id=menu>
+                <ul>
+                    <li>CALCULAR</li>
+                    <li>ALUNOS</li>
+                    <li>HELP</li>
+                </ul>
+            </div>
+            <div style="margin-top: 5px;"></div>
+        </div>
+
+        <div class = "Corpo" id = "Problema">
+
+            <div Class = "Corpo_Interno">
+                <h3 Class= "Cabecalho_Corpo_Interno"> Questão </h3>
+                <dd>
+                    Uma distribuição contínua de cargas está sobre um bastão de 2 metros de comprimento, localizado sobre o eixo x, no intervalo 1m < x < 3m. 
+                    A carga total no bastão é Q=16μC. Estimar o campo elétrico na origem, fazendo a seguinte aproximações da carga no bastão: <br>
+                    <ol type = "a">
+                        <li>Uma carga pontual de 16μC em x=2m;</li>
+                        <br>
+                        <li>Duas cargas puntiformes em x1=1,5m e em x2=2,5m, cada qual de 8μC;</li>
+                        <br>
+                        <li>Quatro cargas puntiformes (cada qual de 4μC) em x1=1,25m,  x2=1,75m, x3=2,25m e em x4=2,75m;</li>
+                        <br>
+                        <li>Escrever um programa que permita generalizar os cálculos para 256 cargas pontuais, igualmente espaçadas, 
+                            e comparar o resultado com o da expressão exata (*calculada no problema 1 da Lista 2 por integração da lei de Coulomb). 
+                            Calcule o erro percentual.</li>
+                        <br>
+                        <li>*Resolva o problema 1 da Lista 2, por integração da lei de Coulomb, obtendo a expressão exata a ser comparada com os resultados 
+                            obtidos nos demais ítens deste problema.</li>
+                        <br>
+                        <li>Caso o erro percentual no ítem (d) seja maior do que 1%, aumente consideravelmente o número de cargas até atingir a precisão mínima de 1%.</li>
+                        <br>
+                    </ol>
+                </dd>
+            </div>
+
+            <div Class = "Corpo_Interno">
+                <h3 Class= "Cabecalho_Corpo_Interno"> Calculo Genérico sobre Campos elétricos uniformes </h3>
+                <dd>
+                    <p>
+                        O cálculo genérico de um campo elétrico em barra uniforme pode ser realizado por aqui, onde se dá o 
+                        tamanho da barra, o valor total da carga na barra e o número de cargas pontiformes que será distribuida
+                        pela barra.
+                    </p>
+                    <ul>
+                        <li>A barra terá o mesmo ponto inicial do exemplo dado na atividade então terá o 
+                            a suas coordenadas sobre o eixo x por 1 < x < x+1. Onde x é dado em metros.
+                        </li>
+                        <li>Ao digitar o valor da carga, deverá escolher a unidade de medida ao lado. Sendo Coulomb, micro-Coulomb, 
+                            ou nano-Coulomb.
+                        </li>
+                        <li>Será dado apenas o número de cargas, as suas possições serão colocadas uniformemente ao longo da barra 
+                            automaticamente.
+                        </li>
+                    </ul>
+                </dd>
+
+                <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #00d9ff7c; color: black;"> Informar os dados </h3>
+                <dd>
+                    <div class = "input">
+                        <input type="text" name="T_Barra" placeholder="Digite o tamanho da barra, em metros" >
+                        <input type="text" name="V_Carga" placeholder="Digite o valor da carga" >
+                        <input type="text" name="Q_Carga" placeholder="Digite a quantidade de cargas" >
+                        <div class = "input_Calcular" >
+                            Calcular
+                        </div>
+                    </div>
+                </dd>
+
+                <h3 Class= "Cabecalho_Corpo_Interno" style="background-color:#00d9ff7c; color: black;"> Calcular a integral </h3>
+                <dd>
+                    <p>
+                        O cálculo genérico de um campo elétrico em barra uniforme pode ser realizado por aqui, onde se dá o 
+                        tamanho da barra, o valor total da carga na barra e o número de cargas pontiformes que será distribuida
+                        pela barra.
+                    </p>
+                    <div class = "input">
+                        <input type="text" name="T_Barra" placeholder="Digite o tamanho da barra, em metros" >
+                        <input type="text" name="V_Carga" placeholder="Digite o valor da carga" >
+                        <div class = "input_Calcular" >
+                            Calcular
+                        </div>
+                    </div>
+                </dd>
+
+            </div>
+
+            <div style="margin-top: 15px;">
+            </div>
+
+        </div>
+
+        <div class = "Corpo" id = "Participantes">
+
+            <div Class = "Corpo_Interno">
+                <h3 class="Cabecalho_Corpo_Interno">Participantes</h3>
+            </div>
+
+            <div style="margin-top: 15px;">
+            </div>
+
+        </div>
+
+        <div id = "Fim_da_Pagina">
+
+            <div id = "Agradecimentos">
+                Tarefa 1 envolvendo programação: Campo elétrico de uma barra - Obrigado pela atenção
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
