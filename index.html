@@ -2,7 +2,7 @@
 
     <head>
         <meta charset = "UTF-8">
-        
+        <script type = "text/javascript" src = "Cod/script.js"></script>
         <title> Física II</title>
         <link rel = "stylesheet" href = "https://pauloramiro.github.io/css/style.css"/>
     </head>
@@ -14,13 +14,6 @@
                 Campo elétrico de uma barra
             </div>
             <div id = "modo">
-            </div>
-            <div id=menu>
-                <ul>
-                    <li>CALCULAR</li>
-                    <li>ALUNOS</li>
-                    <li>HELP</li>
-                </ul>
             </div>
             <div style="margin-top: 5px;"></div>
         </div>
@@ -51,7 +44,125 @@
                     </ol>
                 </dd>
             </div>
+            <div Class = "Corpo_Interno">
+                <h3 Class= "Cabecalho_Corpo_Interno"> a.</h3>
+                <dd>
+                    Uma carga pontual de 16μC em x=2m;
+                </dd>
+                <a >
+                    <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #ff00008e; color: black;"> Resolução </h3>
+                    <dd>
+                        Se há um único ponto com carga na barra e esse ponto se encontra à 2 metros da origem, o campo elétrico que esse ponto
+                        gera na origem é de: 
+                    </dd>
+                    <dd>
+                        35960 N/C.
+                    </dd>
+                </a>
+                <h3 Class= "Cabecalho_Corpo_Interno" onclick="Resolucao_a()" style="display: inline;" > Chamar Função </h3>
+            </div>
 
+            <div Class = "Corpo_Interno">
+                <h3 Class= "Cabecalho_Corpo_Interno"> b.</h3>
+                <dd>
+                    Duas cargas puntiformes em x1=1,5m e em x2=2,5m, cada qual de 8μC;
+                </dd>
+                <a>
+                    <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #ff91008e; color: black;"> Resolução </h3>
+                    <dd>
+                        Quando há duas cargas que dividem o valor total da carga da barra e elas se encontram nas posições x1 = 1,5m e
+                        x2 = 2,5, o valor de seu campo elétrico é de:
+                    </dd>
+                    <dd>
+                        43471,6444 N/C. (Aproximadamente)
+                    </dd>
+                    <dd>
+                        Entretanto, as cargas não estão distribuidas de forma uniforme, se tivessem suas posições seriam
+                        x1 = 1,66 m e x2 = 2,33 m, e o campo elétrico produzido seria:
+                    </dd>
+                    <dd>
+                        39100,9959 N/C. (Aproximadamente)
+                    </dd>
+                </a>
+                <h3 Class= "Cabecalho_Corpo_Interno" onclick="Resolucao_b()" style="display: inline;" > Chamar Função </h3>
+            </div>
+
+            <div Class = "Corpo_Interno">
+                <h3 Class= "Cabecalho_Corpo_Interno"> c.</h3>
+                <dd>
+                    Quatro cargas puntiformes (cada qual de 4μC) em x1=1,25m,  x2=1,75m, x3=2,25m e em x4=2,75m;
+                </dd>
+                <a>
+                    <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #e5ff008e; color: black;"> Resolução </h3>
+                    <dd>
+                        O valor do campo elétrico gerado pelas quatro cargas distribuidas como indicado acima, é:
+                    </dd>
+                    <dd>
+                        46614,6920 N/C. (Aproximadamente)
+                    </dd> 
+                    <dd>
+                        Se as cargas estivessem distribuidas de maneira uniforme o resultado seria:
+                    </dd> 
+                    <dd>
+                        42194.9829 N/C. (Aproximadamente)
+                    </dd>    
+                </a>
+                <h3 Class= "Cabecalho_Corpo_Interno" onclick="Resolucao_c()" style="display: inline;"> Chamar Função </h3>
+    
+            </div>
+
+            <div Class = "Corpo_Interno">
+                <h3 Class= "Cabecalho_Corpo_Interno"> d.</h3>
+                <dd>
+                    Escrever um programa que permita generalizar os cálculos para 256 cargas pontuais, igualmente espaçadas, 
+                    e comparar o resultado com o da expressão exata (*calculada no problema 1 da Lista 2 por integração da lei de Coulomb). 
+                    Calcule o erro percentual.
+                </dd>
+                <a>
+                    <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #00ff2a8e; color: black;"> Resolução </h3>
+                    <dd>
+                        O programa (função) foi escrita com êxito e pode ser conferida logo abaixo na página. O resultado do calculo em questão 
+                        foi de:
+                    </dd>
+                    <dd>
+                        47822.50731 N/C (Aproximadamente)
+                    </dd>
+                    <dd>
+                        Note: A comparação com o valor por integração, bem como o percentual de erro estão anexados na resolução da questão " f ".
+                    </dd>
+                </a>
+            </div>
+
+            <div Class = "Corpo_Interno">
+                <h3 Class= "Cabecalho_Corpo_Interno"> e.</h3>
+                <dd>
+                    *Resolva o problema 1 da Lista 2, por integração da lei de Coulomb, obtendo a expressão exata a ser comparada com os resultados 
+                    obtidos nos demais ítens deste problema.
+                </dd>
+                <a>
+                    <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #0026ff8e; color: black;"> Resolução </h3>
+                    <dd>
+                        Uma distribuição contínua de cargas está sobre um bastão de 2 metros de comprimento, localizado sobre o eixo x, no intervalo 1m < x < 3m. 
+                        A carga total no bastão é Q=16μC. Estimar o campo elétrico na origem, fazendo a seguinte aproximações da carga no bastão:
+                    </dd>
+                </a>  
+            </div>
+
+            <div Class = "Corpo_Interno">
+                <h3 Class= "Cabecalho_Corpo_Interno"> f.</h3>
+                <dd>
+                    Caso o erro percentual no ítem (d) seja maior do que 1%, aumente consideravelmente o número de cargas até atingir a precisão mínima de 1%.
+                </dd>
+                <a>
+                    <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #9900ff8e; color: black;"> Resolução </h3>
+                    <dd>
+                        Uma distribuição contínua de cargas está sobre um bastão de 2 metros de comprimento, localizado sobre o eixo x, no intervalo 1m < x < 3m. 
+                        A carga total no bastão é Q=16μC. Estimar o campo elétrico na origem, fazendo a seguinte aproximações da carga no bastão:
+                    </dd>
+                </a> 
+            </div>
+
+            
             <div Class = "Corpo_Interno">
                 <h3 Class= "Cabecalho_Corpo_Interno"> Calculo Genérico sobre Campos elétricos uniformes </h3>
                 <dd>
@@ -73,19 +184,19 @@
                     </ul>
                 </dd>
 
-                <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #00d9ff7c; color: black;"> Informar os dados </h3>
+                <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #00fff2bd; color: black;"> Informar os dados </h3>
                 <dd>
                     <div class = "input">
-                        <input type="text" name="T_Barra" placeholder="Digite o tamanho da barra, em metros" >
-                        <input type="text" name="V_Carga" placeholder="Digite o valor da carga" >
-                        <input type="text" name="Q_Carga" placeholder="Digite a quantidade de cargas" >
-                        <div class = "input_Calcular" >
+                        <input type="text" name="T_Barra" id="T_Barra" placeholder="Digite o tamanho da barra, em metros" >
+                        <input type="text" name="V_Carga" id="V_Carga" placeholder="Digite o valor da carga" >
+                        <input type="text" name="Q_Carga" id="Q_Carga" placeholder="Digite a quantidade de cargas" >
+                        <button class = "input_Calcular" onclick="Calcular_Somatorio_Das_Cargas()" >
                             Calcular
-                        </div>
+                        </button>
                     </div>
                 </dd>
 
-                <h3 Class= "Cabecalho_Corpo_Interno" style="background-color:#00d9ff7c; color: black;"> Calcular a integral </h3>
+                <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #00fff2bd; color: black;"> Calcular a integral </h3>
                 <dd>
                     <p>
                         O cálculo genérico de um campo elétrico em barra uniforme pode ser realizado por aqui, onde se dá o 
@@ -93,17 +204,16 @@
                         pela barra.
                     </p>
                     <div class = "input">
-                        <input type="text" name="T_Barra" placeholder="Digite o tamanho da barra, em metros" >
-                        <input type="text" name="V_Carga" placeholder="Digite o valor da carga" >
-                        <div class = "input_Calcular" >
+                        <input type="text" name="T_Barra_i" placeholder="Digite o tamanho da barra, em metros" >
+                        <input type="text" name="V_Carga_i" placeholder="Digite o valor da carga" >
+                        <button class = "input_Calcular" onclick="Resolucao_c()" >
                             Calcular
-                        </div>
+                        </button>
                     </div>
                 </dd>
 
             </div>
 
-            <div style="margin-top: 15px;">
             </div>
 
         </div>
@@ -112,9 +222,6 @@
 
             <div Class = "Corpo_Interno">
                 <h3 class="Cabecalho_Corpo_Interno">Participantes</h3>
-            </div>
-
-            <div style="margin-top: 15px;">
             </div>
 
         </div>
