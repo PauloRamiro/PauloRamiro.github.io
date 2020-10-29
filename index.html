@@ -13,8 +13,10 @@
             <div id = "Nome_Trabalho">
                 Campo elétrico de uma barra
             </div>
-            <div id = "modo">
-            </div>
+            <select id = "modo">
+                <option value="1"> N </option>
+                <option value="2"> D </option>
+            </select>
             <div style="margin-top: 5px;"></div>
         </div>
 
@@ -140,11 +142,49 @@
                     obtidos nos demais ítens deste problema.
                 </dd>
                 <a>
-                    <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #0026ff8e; color: black;"> Resolução </h3>
+                    <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #0026ff50; color: black;"> Resolução </h3>
                     <dd>
-                        Uma distribuição contínua de cargas está sobre um bastão de 2 metros de comprimento, localizado sobre o eixo x, no intervalo 1m < x < 3m. 
-                        A carga total no bastão é Q=16μC. Estimar o campo elétrico na origem, fazendo a seguinte aproximações da carga no bastão:
+                       A função genérica para calcular a integral se encontra logo abaixo no site. O valor da integral nesse caso é 
+                       de:
                     </dd>
+                    <dd>
+                        47946.6666 N/C (Aproximadamente)
+                    </dd>
+                    <br>
+                    <dd>
+                        À saber, o percentual de acerto das questões anteriores (aproximados):
+                    </dd>
+                    <br>
+                    <h3 Class= "Cabecalho_Corpo_Interno" onclick="Resolucao_c()" style="display: inline;"> Questão a. </h3>
+                    <ul style="list-style-type: none;">
+                        <li>
+                                O percentual de acerto foi de 75% .
+                         </li>
+                    </ul>
+                    <h3 Class= "Cabecalho_Corpo_Interno" onclick="Resolucao_c()" style="display: inline;"> Questão b. </h3>
+                    <ul style="list-style-type: none;">
+                        <li>
+                                O percentual de acerto para as coordenadas dadas na questão foi de 90,66%.
+                         </li>
+                         <li>
+                            O percentual de acerto, se as cargas fossem distribuidas uniformemente, na questão foi de 81,55%.
+                        </li>
+                    </ul>
+                    <h3 Class= "Cabecalho_Corpo_Interno" onclick="Resolucao_c()" style="display: inline;"> Questão c. </h3>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            O percentual de acerto para as coordenadas dadas na questão foi de 97,22%.
+                        </li>
+                        <li>
+                            O percentual de acerto, se as cargas fossem distribuidas uniformemente, na questão foi de 88,003%.
+                        </li>
+                    </ul>
+                    <h3 Class= "Cabecalho_Corpo_Interno" onclick="Resolucao_c()" style="display: inline;"> Questão d. </h3>
+                    <ul style="list-style-type: none;">
+                        <li>
+                                O percentual de acerto foi de 99,74% .
+                         </li>
+                    </ul>
                 </a>  
             </div>
 
@@ -154,11 +194,22 @@
                     Caso o erro percentual no ítem (d) seja maior do que 1%, aumente consideravelmente o número de cargas até atingir a precisão mínima de 1%.
                 </dd>
                 <a>
-                    <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #9900ff8e; color: black;"> Resolução </h3>
+                    <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #9900ff50; color: black;"> Resolução </h3>
                     <dd>
-                        Uma distribuição contínua de cargas está sobre um bastão de 2 metros de comprimento, localizado sobre o eixo x, no intervalo 1m < x < 3m. 
-                        A carga total no bastão é Q=16μC. Estimar o campo elétrico na origem, fazendo a seguinte aproximações da carga no bastão:
+                        O percentual de erro da questão em relação a integral foi de ≅ 0,2589%, logo não é necessário aumentar o valor das cargas.
                     </dd>
+                    <br>
+                    <h3 Class= "Cabecalho_Corpo_Interno" onclick="Resolucao_c()" style="display: inline;"> Curiosidades: </h3>
+                    <ul style="list-style-type: none;">
+                        <li>
+                                A quantidade de cargas nescessárias para que o percentual fique acima de 1% de erro foi de 65 cargas distribuídas
+                                uniformemente, com o percentual de erro de  ≅ 1,00031%.
+                        </li>
+                        <br>
+                        <li>
+                            Se fossem 66 cargas distribuídas uniformemente, com o percentual de erro seria  ≅ 0,988832%.
+                    </li>
+                    </ul>
                 </a> 
             </div>
 
@@ -167,13 +218,12 @@
                 <h3 Class= "Cabecalho_Corpo_Interno"> Calculo Genérico sobre Campos elétricos uniformes </h3>
                 <dd>
                     <p>
-                        O cálculo genérico de um campo elétrico em barra uniforme pode ser realizado por aqui, onde se dá o 
-                        tamanho da barra, o valor total da carga na barra e o número de cargas pontiformes que será distribuida
-                        pela barra.
+                        O cálculo genérico de um campo elétrico em barra uniforme pode ser realizado por aqui, onde se dão a distância que o 
+                        ponto, à saber o campo elétrico, está da barra; o tamanho da barra; o valor total de carga na barra e o 
+                        número de cargas pontiformes que será distribuida pela barra.
                     </p>
                     <ul>
-                        <li>A barra terá o mesmo ponto inicial do exemplo dado na atividade então terá o 
-                            a suas coordenadas sobre o eixo x por 1 < x < x+1. Onde x é dado em metros.
+                        <li>O valores de distância e tamanho são dados em metros.
                         </li>
                         <li>Ao digitar o valor da carga, deverá escolher a unidade de medida ao lado. Sendo Coulomb, micro-Coulomb, 
                             ou nano-Coulomb.
@@ -187,9 +237,17 @@
                 <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #00fff2bd; color: black;"> Informar os dados </h3>
                 <dd>
                     <div class = "input">
+                        <input type="text" name="D_Campo" id="D_Campo" placeholder="Digite a distância x (m) que o ponto está da barra" >
                         <input type="text" name="T_Barra" id="T_Barra" placeholder="Digite o tamanho da barra, em metros" >
-                        <input type="text" name="V_Carga" id="V_Carga" placeholder="Digite o valor da carga" >
                         <input type="text" name="Q_Carga" id="Q_Carga" placeholder="Digite a quantidade de cargas" >
+                        <input type="text" name="V_Carga" id="V_Carga" placeholder="Digite o valor da carga" >
+                        
+                        <select name="M_Coulomb" id="M_Coulomb">
+                            <option value="1"> nC - nano-Coulomb</option>
+                            <option value="2"> μC - micro-Coulomb</option>
+                            <option value="3"> C - Coulomb</option>
+                        </select>
+                        
                         <button class = "input_Calcular" onclick="Calcular_Somatorio_Das_Cargas()" >
                             Calcular
                         </button>
@@ -199,14 +257,21 @@
                 <h3 Class= "Cabecalho_Corpo_Interno" style="background-color: #00fff2bd; color: black;"> Calcular a integral </h3>
                 <dd>
                     <p>
-                        O cálculo genérico de um campo elétrico em barra uniforme pode ser realizado por aqui, onde se dá o 
-                        tamanho da barra, o valor total da carga na barra e o número de cargas pontiformes que será distribuida
-                        pela barra.
+                        Para calcular a integral serão necessários  a distância que o ponto, à saber o campo elétrico, está da barra; 
+                        o tamanho da barra e o valor total de carga na barra.
                     </p>
                     <div class = "input">
-                        <input type="text" name="T_Barra_i" placeholder="Digite o tamanho da barra, em metros" >
-                        <input type="text" name="V_Carga_i" placeholder="Digite o valor da carga" >
-                        <button class = "input_Calcular" onclick="Resolucao_c()" >
+                        <input type="text" name="D_Campo_i" id="D_Campo_i" placeholder="Digite a distância x (m) que o ponto está da barra" >
+                        <input type="text" name="T_Barra_i" id= "T_Barra_i" placeholder="Digite o tamanho da barra, em metros" >
+                        <input type="text" name="V_Carga_i" id= "V_Carga_i" placeholder="Digite o valor da carga" >
+
+                        <select name="M_Coulomb_i" id="M_Coulomb_i">
+                            <option value="1"> nC - nano-Coulomb</option>
+                            <option value="2"> μC - micro-Coulomb</option>
+                            <option value="3"> C - Coulomb</option>
+                        </select>
+
+                        <button class = "input_Calcular" onclick="Calcular_Integral()" >
                             Calcular
                         </button>
                     </div>
