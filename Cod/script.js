@@ -1,10 +1,21 @@
 function Calcular_Somatorio_Das_Cargas()
 {
+    var Distancia_Da_Barra = parseFloat(document.getElementById("D_Campo").value);
     var Tamanho_Bastao = parseFloat(document.getElementById("T_Barra").value);
     var Quantidade_Carga = parseFloat(document.getElementById("V_Carga").value);
     var Quantidade_Particulas = parseInt(document.getElementById("Q_Carga").value);
+    var Medida_Coulomb = parseInt(document.getElementById("M_Coulomb").value);
+
+    if (Medida_Coulomb == 1)
+    {
+        Quantidade_Carga = Quantidade_Carga*0.000000001
+    }
+    if (Medida_Coulomb == 2)
+    {
+        Quantidade_Carga = Quantidade_Carga*0.000001
+    }
     
-    var Raio = 1;
+    var Raio = Distancia_Da_Barra;
     var Resultado = 0;
     var Const_Coulomb = 8990000000;
     var Calculo_Campo_Eletrico_da_Particula;
@@ -23,12 +34,25 @@ function Calcular_Somatorio_Das_Cargas()
 }
 
 function Calcular_Integral()
-{
-    var Tamanho_Bastao = parseFloat(document.getElementById("T_Barra").value);
-    var Quantidade_Carga = parseFloat(document.getElementById("V_Carga").value);
+{   
+    var Distancia_Da_Barra = parseFloat(document.getElementById("D_Campo_i").value);
+    var Tamanho_Bastao = parseFloat(document.getElementById("T_Barra_i").value);
+    var Quantidade_Carga = parseFloat(document.getElementById("V_Carga_i").value);
+    var Medida_Coulomb = parseInt(document.getElementById("M_Coulomb_i").value);
 
-    var Resultado = 0;
+    if (Medida_Coulomb == 1)
+    {
+        Quantidade_Carga = Quantidade_Carga*0.000000001
+    }
+    if (Medida_Coulomb == 2)
+    {
+        Quantidade_Carga = Quantidade_Carga*0.000001
+    }
+
     var Const_Coulomb = 8990000000;
+    var Resultado = (Const_Coulomb*Quantidade_Carga)/(Distancia_Da_Barra*(Tamanho_Bastao+Distancia_Da_Barra));
+
+    alert(Resultado+" N/C");
 }
 
 //_________________________________________OUTRAS FUNÇÔES________________________________________________
