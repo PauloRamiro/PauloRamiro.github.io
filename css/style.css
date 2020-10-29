@@ -2,7 +2,6 @@ body{
     font-family:  Arial ,Times, Times New Roman, serif;
     font-size: x-large;
     color:#ffffff;
-
     margin: 0;
     padding: 0;
     background-image: url("Img/Background (5).png");
@@ -81,6 +80,7 @@ dd{
 }
 
 .Corpo{
+    margin-bottom: 15px;
     margin-top: 15px;
     margin-left: 12.5%;
     width: 75%;
@@ -104,12 +104,17 @@ dd{
 
 .Corpo_Interno{
     margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 2.5%;
     width: 95%;
     font-size: medium;
     background-color: #2f3136;
     border:1px solid #000000;
     border-radius: 2px;
+    transition: linear 0.6s; 
+}
+.Corpo_Interno:hover{
+    background-color: #232529;
 }
 
 .input{
@@ -119,8 +124,14 @@ dd{
     background-image: url("Img/Background (11).png");
     background-size: 100px;
     border:1px solid #000000;
-    border-radius: 10px; 
+    border-radius: 10px;
+    transition: all ease-in 0.6s; 
 }
+.input:hover{
+    background-image: url("Img/Background (i).png");
+    background-size: 100px;
+}
+
 .input_Calcular{
     margin-top: 10px;
     margin-bottom: 10px;
