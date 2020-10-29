@@ -10,7 +10,7 @@ body{
 div{
     box-shadow: 10px 10px 20px #1a1a1a;
 }
-input{
+input, select{
     margin-top: 10px;
     display: block;
     margin-left: 15%;
@@ -50,7 +50,7 @@ dd{
 }
 
 #modo{
-    background-color: yellow;
+    background: linear-gradient( yellow, yellow, gray, gray);
     width: 2.5%;
     height: 0px;
     padding-bottom: 2.5%;
