@@ -49,16 +49,6 @@ dd{
     box-shadow: 0px 0px 0px #1a1a1a;
 }
 
-#modo{
-    background: linear-gradient( yellow, yellow, gray, gray);
-    width: 2.5%;
-    height: 0px;
-    padding-bottom: 2.5%;
-    float: right;
-    border-radius: 50%;
-    margin-right: 2%;
-}
-
 .Corpo{
     margin-bottom: 15px;
     margin-top: 15px;
@@ -180,26 +170,42 @@ dd{
     }
 
 }
-/*
+
 @media only screen and (max-width: 1000px){
     body{
         font-size:20px;
     }
     #Problema{
+        transition: all ease-in 0.6s; 
         margin-top: 82px;
     }
 
+    input, select{
+        transition: all ease-in 0.6s; 
+        margin-top: 10px;
+        margin-left: 15%;
+        width: 70%;
+        height: 45px;
+    }   
+
     #Nome_Trabalho{
-        font-size:48px;
+        transition: all ease-in 0.6s; 
+        font-size:38px;
+    }
+    .Corpo{
+        transition: all ease-in 0.6s; 
+        margin-left: 0.5%;
+        width: 98%;
     }
     .Corpo_Interno{
-        font-size: 22px;
-        
+        transition: all ease-in 0.6s; 
+        font-size: 22px;    
     }
     
     #Agradecimentos{
+        transition: all ease-in 0.6s; 
         bottom:0;
         font-size:14px;
     }
 
-}*/
+}
