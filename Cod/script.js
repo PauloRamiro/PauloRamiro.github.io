@@ -20,17 +20,27 @@ function Calcular_Somatorio_Das_Cargas()
     var Const_Coulomb = 8990000000;
     var Calculo_Campo_Eletrico_da_Particula;
     var Carga_Por_Particula = Quantidade_Carga/Quantidade_Particulas;
-    var Dist_Particulas_Bastão = Tamanho_Bastao/(Quantidade_Particulas+1);
+    var Dist_Particulas_Bastão = (Tamanho_Bastao/Quantidade_Particulas);
 
 
     for(i=0; Quantidade_Particulas>i; i++)
-    {
-        Raio = Raio+Dist_Particulas_Bastão;
+    {   
+        if(Raio == Distancia_Da_Barra){
+            Raio = Distancia_Da_Barra+(Dist_Particulas_Bastão/2);
+        }
+        else{
+            Raio = Raio+Dist_Particulas_Bastão;
+        }
+
         Calculo_Campo_Eletrico_da_Particula = (Const_Coulomb*Carga_Por_Particula)/(Raio*Raio);
         Resultado = Resultado + Calculo_Campo_Eletrico_da_Particula;
     }
 
-    alert(Resultado+" N/C");
+    var Integral = (Const_Coulomb*Quantidade_Carga)/(Distancia_Da_Barra*(Tamanho_Bastao+Distancia_Da_Barra));
+    Porcentagem= (Resultado*100)/(Integral);
+
+    alert("O campo elétrico gerado nesse ponto é: \n"+Resultado+" N/C"+ "\n"+"O percentual de acerto é: "+
+    Porcentagem+"%"+"\n"+"O percentual de erro é: "+(100-Porcentagem)+"%");
 }
 
 function Calcular_Integral()
@@ -52,7 +62,7 @@ function Calcular_Integral()
     var Const_Coulomb = 8990000000;
     var Resultado = (Const_Coulomb*Quantidade_Carga)/(Distancia_Da_Barra*(Tamanho_Bastao+Distancia_Da_Barra));
 
-    alert(Resultado+" N/C");
+    alert("O campo elétrico gerado nesse ponto é: \n"+Resultado+" N/C");
 }
 
 //_________________________________________OUTRAS FUNÇÔES________________________________________________
@@ -67,14 +77,15 @@ function Resolucao_a()
     var Dist_Particulas_Bastão = [2];
     var Carga_Por_Particula = Quantidade_Carga/Quantidade_Particulas;
 
-    for(i=0; Quantidade_Particulas>i; i++)
-    {
         
-        Calculo_Campo_Eletrico_da_Particula = (Const_Coulomb*Carga_Por_Particula)/(Dist_Particulas_Bastão[i]*Dist_Particulas_Bastão[i]);
-        Resultado = Resultado + Calculo_Campo_Eletrico_da_Particula;
-    }
+    Calculo_Campo_Eletrico_da_Particula = (Const_Coulomb*Carga_Por_Particula)/(Dist_Particulas_Bastão[0]*Dist_Particulas_Bastão[0]);
+    Resultado = Resultado + Calculo_Campo_Eletrico_da_Particula;
 
-    alert(Resultado+" N/C");
+    var Integral =  47946.666666666666666;
+    Porcentagem= (Resultado*100)/(Integral);
+
+    alert("O campo elétrico gerado nesse ponto é: \n"+Resultado+" N/C"+ "\n"+"O percentual de acerto é: "+
+    Porcentagem+"%"+"\n"+"O percentual de erro é: "+(100-Porcentagem)+"%");
 }
 
 function Resolucao_b()
@@ -94,7 +105,11 @@ function Resolucao_b()
         Resultado = Resultado + Calculo_Campo_Eletrico_da_Particula;
     }
 
-    alert(Resultado+" N/C");
+    var Integral =  47946.666666666666666;
+    Porcentagem= (Resultado*100)/(Integral);
+
+    alert("O campo elétrico gerado nesse ponto é: \n"+Resultado+" N/C"+ "\n"+"O percentual de acerto é: "+
+    Porcentagem+"%"+"\n"+"O percentual de erro é: "+(100-Porcentagem)+"%");
 }
 
 function Resolucao_c()
@@ -114,5 +129,9 @@ function Resolucao_c()
         Resultado = Resultado + Calculo_Campo_Eletrico_da_Particula;
     }
 
-    alert(Resultado+" N/C");
+    var Integral = 47946.666666666666666;
+    Porcentagem= (Resultado*100)/(Integral);
+
+    alert("O campo elétrico gerado nesse ponto é: \n"+Resultado+" N/C"+ "\n"+"O percentual de acerto é: "+
+    Porcentagem+"%"+"\n"+"O percentual de erro é: "+(100-Porcentagem)+"%");
 }
